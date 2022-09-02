@@ -5,11 +5,6 @@ var fresult=document.querySelector("#finalResult");
 var operator="";
 // fresult.innerText="";
 
-
-var nums=document.getElementsByClassName("grid-item");
-function print(num){
-    result.innerText= num;
-}
 document.getElementById("grid-item1").addEventListener("click", r=>{
     result.innerText=result.innerText+document.getElementById("grid-item1").innerText;
 });
@@ -47,6 +42,9 @@ document.getElementById("grid-item-").addEventListener("click", r=>{
     result.innerText=result.innerText+document.getElementById("grid-item-").innerText;
 });
 document.getElementById("grid-itemc").addEventListener("click", r=>{
+    result.innerText="";
+});
+document.getElementById("grid-itemcc").addEventListener("click", r=>{
     fresult.innerText=0;
 });
 
